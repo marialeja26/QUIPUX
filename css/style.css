@@ -43,12 +43,14 @@
     text-decoration: none;
     margin-top: 4em;
     transition: 0.3s;
+    display: none;
 }
 
 .main .container-nav a:nth-child(2){
     text-decoration: none;
     margin-top: 2em;
     transition: 0.3s;
+    display: none;
 }
 
 .main .container-nav a{
@@ -261,6 +263,20 @@
     font-size: 1em;
 }
 
+.main .container-generic .container-body .service-box .procedures-box progress[value]{
+    width: 50%;
+    height: 5px;
+    border-radius: 5px;
+}
+
+.main .container-generic .container-body .service-box .procedures-box progress::-webkit-progress-bar{
+    background-color: #049ef4;
+}
+
+.main .container-generic .container-body .service-box .procedures-box progress::-webkit-progress-value{
+    background-color: #00519e;
+}
+
 .main .container-generic .container-footer{
     background-color: #fff;
     width: 100%;
@@ -348,6 +364,65 @@
     }
     
     .main .container-generic .container-body .search-box .query-box form button{
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width:599px){
+    .main .container-generic .container-header div:nth-child(2) span{
+        display: none;
+    }
+
+    .main .container-generic .container-body .search-box .query-box{
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .main .container-generic .container-body .search-box .query-box h1{
+        width: 100%;
+        text-align: center;
+        text-indent: 0;
+     }
+
+     .main .container-generic .container-body .search-box .query-box h4{
+        width: 100%;
+        text-align: center;
+    }
+    
+    .main .container-generic .container-body .search-box .query-box form{
+      width: 100%;
+      margin: 1em auto;
+    }
+    
+    .main .container-generic .container-body .search-box .query-box form input{
+        width: 100%;
+    }
+    
+    .main .container-generic .container-body .search-box .query-box form button{
+        width: 100%;
+    }
+
+    .main .container-generic .container-body .search-box .options-box{
+        width: 95%;
+        margin: 30px auto;
+        text-align: center;
+        overflow: scroll;
+    }
+    
+    .main .container-generic .container-body .search-box .options-box div{
+        width: 100%;
+        padding-left: 1em;
+    }
+
+    .main .container-generic .container-body{
+        flex-direction: column;
+    }
+
+    .main .container-generic .container-body .search-box{
+        width: 100%;
+    }
+    
+    .main .container-generic .container-body .service-box{
         width: 100%;
     }
 }
