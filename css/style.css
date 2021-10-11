@@ -70,6 +70,9 @@
     width: 100%;
     height: 60px;
     text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: .8em;
 }
 
 .main .container-nav a:hover{
@@ -92,6 +95,15 @@
     justify-content: space-between;
 }
 
+.main .container-generic .container-header div:nth-child(1){
+    width: 200px;
+    font-size: 1.2em;
+    margin-right: 4em;
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
 .main .container-generic .container-header div:nth-child(2){
     width: 200px;
     font-size: 1.2em;
@@ -102,13 +114,14 @@
 }
 
 .main .container-generic .container-header div img{
-    margin: 2em 4em;
-}
+    margin-left: 8em;}
 
 .main .container-generic .container-body{
     width: 100%;
     height: 80%;
     display: flex;
+    font-size: 1em;
+    color: black;
 }
 
 .main .container-generic .container-body .search-box{
@@ -308,7 +321,14 @@
     text-transform: uppercase;
     font-family: 'Inter', sans-serif;
     font-size: 2em;
+    margin-left: 2em;
 }
+
+.main .container-generic .container-header .menu a:nth-child(1){
+    text-decoration: none;
+    color: black;
+}
+
 .main .container-generic .container-body .ctn-info{
     width: 40%;
     height: inherit;
@@ -370,8 +390,7 @@
     padding: 1em 0 0 1em;
     text-transform: uppercase;
     background-color: var(--color-primario);
-    margin: 2em 5em;
-    
+    margin: 2em 5em;   
 }
 
 .main .container-generic .container-body .art-contacto .contacto{
@@ -500,6 +519,16 @@
         display: flex;
         flex-direction: column;
     }
+
+    .main .container-generic .container-body .art-contacto{
+        width: 95%;
+        margin: 1em auto;
+    }
+
+    .main .container-generic .container-body .art-info{
+        width: 95%;
+        margin: 1em auto;
+    }
 }
 
 @media only screen and (max-width: 745px){
@@ -605,5 +634,15 @@
     .main .container-generic .container-body .ctn-contacto .ambos{
         display: flex;
         flex-direction: column;
+    }
+
+    .main .container-generic .container-body .art-contacto{
+        width: 95%;
+        margin: 1em auto;
+    }
+
+    .main .container-generic .container-body .art-info{
+        width: 95%;
+        margin: 1em auto;
     }
 }
